@@ -1,0 +1,59 @@
+button {
+  min-width: 60px;
+  min-height: 60px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  color: #5d5661;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 2rem;
+  box-shadow: 7px 6px 12px -9px #5d5661;
+  background: linear-gradient(#f4f5f7, #f4f5f7) padding-box,
+    linear-gradient(to right, #fff, #f4f5f7) border-box;
+  border: 0.25px solid transparent;
+}
+
+.equal {
+  grid-row: 5/7;
+  grid-column: 4/4;
+  color: #fff;
+  font-weight: 800;
+  font-size: 36px;
+  background: linear-gradient(#a02efd, #a02efd) padding-box,
+    linear-gradient(to right, #fff, #dfd3e8) border-box;
+  border: 0.25px solid transparent;
+  box-shadow: 7px 6px 12px -9px #a02efd;
+}
+
+.clear {
+  background: linear-gradient(#feb92d, #feb92d) padding-box,
+    linear-gradient(to right, #fff, #feb92d) border-box;
+  color: #fff;
+  font-weight: 800;
+  font-size: 20px;
+  border: 0.25px solid transparent;
+  box-shadow: 7px 6px 12px -9px #feb92d;
+}
+
+.yellowish-actions {
+  color: #bd964c;
+  background: linear-gradient(#f4f1e5, #f4f1e5) padding-box,
+    linear-gradient(to right, #fff, #f4f1e5) border-box;
+  border: 0.25px solid transparent;
+  box-shadow: 7px 6px 12px -9px #bd964c;
+}
+
+.purplish-actions {
+  color: #540783;
+  background: linear-gradient(#dfd3e8, #dfd3e8) padding-box,
+    linear-gradient(to right, #fff, #dfd3e8) border-box;
+  border: 0.25px solid transparent;
+  box-shadow: 7px 6px 12px -9px #540783;
+}
+.erase {
+  background: linear-gradient(#e8e9ed, #e8e9ed) padding-box,
+    linear-gradient(to right, #fff, #e8e9ed) border-box;
+  border: 0.25px solid transparent;
+}

@@ -1,9 +1,9 @@
 import React from "react";
-//import "./Button.css";
+import "./Button.css";
 
 type ButtonType = {
   className: string;
-  value: string | React.ReactElement;
+  value: string | number | React.ReactElement;
   onClick: () => void;
 };
 

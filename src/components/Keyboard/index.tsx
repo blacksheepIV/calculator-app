@@ -1,8 +1,8 @@
 import React from "react";
-//import "./ButtonBox.css";
+import "./Keyboard.css";
 
 type KeyboardProps = {
-  children: React.ReactElement;
+  children: React.ReactElement[];
 };
 
 const ButtonBox: React.FC<KeyboardProps> = ({ children }) => {

@@ -1,4 +1,5 @@
 .calculator__screen {
   width: 100%;
   min-height: 155px;
+  margin-bottom: 30px;
 }
