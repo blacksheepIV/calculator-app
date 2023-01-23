@@ -1,7 +1,7 @@
 .wrapper {
   min-width: 340px;
   min-height: 620px;
-  padding: 20px;
+  padding: 10px 20px 20px 20px;
   border-radius: 20px;
   background-color: #fff;
   box-shadow: 8px 17px 40px 0px rgba(0, 0, 0, 0.1);

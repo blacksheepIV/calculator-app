@@ -7,6 +7,7 @@ import Button from "./components/Button";
 import Keyboard from "./components/Keyboard";
 import CalcProvider from "./context/CalcContext";
 import { ButtonType } from "./components/Button/types";
+import Header from "./components/Header";
 
 const btnValues: ButtonType[][] = [
   [
@@ -62,6 +63,7 @@ const App: React.FC = () => (
   <CalcProvider>
     <Wrapper>
       <>
+        <Header />
         <Screen />
         <Keyboard>
           {btnValues.flat().map((btn, i) => {
