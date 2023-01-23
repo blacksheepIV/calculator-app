@@ -1,5 +1,12 @@
 This project is a calculator inspired by [this design](https://dribbble.com/shots/9631225--Design-for-DailyUi-Day004-Calculator/attachments/1659581?mode=media) from [eilsgraff](https://dribbble.com/eilsgraff).
 
+## TODOS
+
+- [x] Support dark mode
+- [x] Add clock to app's header
+- [ ] refactor CSS & use SCSS
+- [] Implement it with `XSTATE` instead of `context api`
+
 It is bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
