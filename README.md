@@ -6,6 +6,8 @@ This project is a calculator inspired by [this design](https://dribbble.com/shot
 - [x] Add clock to app's header
 - [ ] refactor CSS & use SCSS
 - [ ] Implement it with `XSTATE` instead of `context api`
+- [ ] fix textfit problem in screen
+- [ ] add more operations to the calculator
 
 It is bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
