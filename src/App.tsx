@@ -5,12 +5,10 @@ import Wrapper from "./components/Wrapper";
 import Screen from "./components/Screen";
 import Button from "./components/Button";
 import Keyboard from "./components/Keyboard";
+import CalcProvider from "./context/CalcContext";
+import { ButtonType } from "./components/Button/types";
 
-type ButtonValue = {
-  value: number | string | React.ReactElement;
-  className: string;
-};
-const btnValues: ButtonValue[][] = [
+const btnValues: ButtonType[][] = [
   [
     { value: "C", className: "clear" },
     { value: "(", className: "yellowish-actions" },
@@ -18,7 +16,7 @@ const btnValues: ButtonValue[][] = [
     { value: "x", className: "purplish-actions" }
   ],
   [
-    { value: "√ ", className: "yellowish-actions" },
+    { value: "√", className: "yellowish-actions" },
     { value: "%", className: "yellowish-actions" },
     { value: "±", className: "yellowish-actions" },
     { value: "÷", className: "purplish-actions" }
@@ -50,7 +48,7 @@ const btnValues: ButtonValue[][] = [
           value={{
             style: { verticalAlign: "middle" },
             size: "1.4em",
-            color: "#5d5661"
+            color: "#517e9c"
           }}
         >
           <RiDeleteBack2Line />
@@ -61,25 +59,24 @@ const btnValues: ButtonValue[][] = [
   ]
 ];
 const App: React.FC = () => (
-  <Wrapper>
-    <>
-      <Screen value="0" />
-      <Keyboard>
-        {btnValues.flat().map((btn, i) => {
-          return (
-            <Button
-              key={i}
-              className={btn?.className || ""}
-              value={btn?.value}
-              onClick={() => {
-                console.log(`${btn.value} clicked!`);
-              }}
-            />
-          );
-        })}
-      </Keyboard>
-    </>
-  </Wrapper>
+  <CalcProvider>
+    <Wrapper>
+      <>
+        <Screen />
+        <Keyboard>
+          {btnValues.flat().map((btn, i) => {
+            return (
+              <Button
+                key={i}
+                className={btn?.className || ""}
+                value={btn?.value}
+              />
+            );
+          })}
+        </Keyboard>
+      </>
+    </Wrapper>
+  </CalcProvider>
 );
 
 export default App;

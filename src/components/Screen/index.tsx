@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Screen.css";
+import { CalcContext } from "../../context/CalcContext";
 
-type ScreenProps = {
-  value: string;
+// type ScreenProps = {
+//   value: string;
+// };
+const Screen: React.FC<{}> = () => {
+  const { calc } = useContext(CalcContext);
+  return (
+    <div className="calculator__screen">
+      {!!calc.operation ? calc.operation : calc.res}
+    </div>
+  );
 };
-const Screen: React.FC<ScreenProps> = ({ value = "oops" }) => (
-  <div className="calculator__screen">{value}</div>
-);
 
 export default Screen;

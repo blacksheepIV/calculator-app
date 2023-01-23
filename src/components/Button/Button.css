@@ -3,13 +3,12 @@ button {
   min-height: 60px;
   border: none;
   outline: none;
-  font-size: 16px;
-  font-weight: 300;
-  color: #5d5661;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 400;
+  color: #517e9c;
   cursor: pointer;
   border-radius: 2rem;
-  box-shadow: 7px 6px 12px -9px #5d5661;
+  box-shadow: 4px 6px 12px -9px #5d5661;
   background: linear-gradient(#f4f5f7, #f4f5f7) padding-box,
     linear-gradient(to right, #fff, #f4f5f7) border-box;
   border: 0.25px solid transparent;
@@ -24,7 +23,7 @@ button {
   background: linear-gradient(#a02efd, #a02efd) padding-box,
     linear-gradient(to right, #fff, #dfd3e8) border-box;
   border: 0.25px solid transparent;
-  box-shadow: 7px 6px 12px -9px #a02efd;
+  box-shadow: 4px 6px 12px -9px #a02efd;
 }
 
 .clear {
@@ -34,7 +33,7 @@ button {
   font-weight: 800;
   font-size: 20px;
   border: 0.25px solid transparent;
-  box-shadow: 7px 6px 12px -9px #feb92d;
+  box-shadow: 4px 6px 12px -9px #feb92d;
 }
 
 .yellowish-actions {
@@ -42,7 +41,7 @@ button {
   background: linear-gradient(#f4f1e5, #f4f1e5) padding-box,
     linear-gradient(to right, #fff, #f4f1e5) border-box;
   border: 0.25px solid transparent;
-  box-shadow: 7px 6px 12px -9px #bd964c;
+  box-shadow: 4px 6px 12px -9px #bd964c;
 }
 
 .purplish-actions {
@@ -50,7 +49,7 @@ button {
   background: linear-gradient(#dfd3e8, #dfd3e8) padding-box,
     linear-gradient(to right, #fff, #dfd3e8) border-box;
   border: 0.25px solid transparent;
-  box-shadow: 7px 6px 12px -9px #540783;
+  box-shadow: 4px 6px 12px -9px #540783;
 }
 .erase {
   background: linear-gradient(#e8e9ed, #e8e9ed) padding-box,
