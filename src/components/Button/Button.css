@@ -14,6 +14,13 @@ button {
   border: 0.25px solid transparent;
 }
 
+.button--dark {
+  color: #a5afac;
+  border: none;
+  box-shadow: -4px -5px 11px -9px #a5afac;
+  background: linear-gradient(#36373b, #373a3c);
+}
+
 .equal {
   grid-row: 5/7;
   grid-column: 4/4;
@@ -24,6 +31,16 @@ button {
     linear-gradient(to right, #fff, #dfd3e8) border-box;
   border: 0.25px solid transparent;
   box-shadow: 4px 6px 12px -9px #a02efd;
+}
+.equal--dark {
+  grid-row: 5/7;
+  grid-column: 4/4;
+  color: #fff;
+  font-weight: 800;
+  font-size: 36px;
+  border: none;
+  box-shadow: -4px -5px 11px -9px #a5afac;
+  background: linear-gradient(#8927d6, #9f2cfb);
 }
 
 .clear {
@@ -36,12 +53,26 @@ button {
   box-shadow: 4px 6px 12px -9px #feb92d;
 }
 
+.clear--dark {
+  background: linear-gradient(#fdb82d, #fdb82b);
+  color: #fff;
+  font-weight: 800;
+  font-size: 20px;
+  box-shadow: -4px -5px 11px -9px #feb92d;
+}
+
 .yellowish-actions {
   color: #bd964c;
   background: linear-gradient(#f4f1e5, #f4f1e5) padding-box,
     linear-gradient(to right, #fff, #f4f1e5) border-box;
   border: 0.25px solid transparent;
   box-shadow: 4px 6px 12px -9px #bd964c;
+}
+
+.yellowish-actions--dark {
+  color: #c58934;
+  background: linear-gradient(#484235, #504a3f);
+  box-shadow: -4px -5px 11px -9px #c58934;
 }
 
 .purplish-actions {
@@ -51,8 +82,17 @@ button {
   border: 0.25px solid transparent;
   box-shadow: 4px 6px 12px -9px #540783;
 }
+.purplish-actions--dark {
+  color: #c67ce8;
+  background: linear-gradient(#4b375f, #4b355f);
+  box-shadow: -4px -5px 11px -9px #c67ce8;
+}
 .erase {
   background: linear-gradient(#e8e9ed, #e8e9ed) padding-box,
     linear-gradient(to right, #fff, #e8e9ed) border-box;
   border: 0.25px solid transparent;
+}
+.erase--dark {
+  background: linear-gradient(#2d2c31, #2b2f33);
+  box-shadow: -4px -5px 11px -9px #a5afac;
 }

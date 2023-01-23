@@ -7,6 +7,8 @@ export type InitialStateType = {
 export type CalcContextValueType = {
   calc: InitialStateType;
   setCalc: React.Dispatch<React.SetStateAction<InitialStateType>>;
+  darkMode: boolean;
+  setDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 export type CalcProviderProps = {

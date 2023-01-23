@@ -1,5 +1,8 @@
 import React from "react";
 import "./Keyboard.css";
+import { TfiArrowsVertical } from "react-icons/tfi";
+import Switch from "../Switch";
+import Button from "../Button";
 
 type KeyboardProps = {
   children: React.ReactElement[];

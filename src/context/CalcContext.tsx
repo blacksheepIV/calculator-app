@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 import {
   CalcContextValueType,
   CalcProviderProps,
@@ -17,8 +17,13 @@ const CalcProvider: React.FC<CalcProviderProps> = ({ children }) => {
     operation: ""
   });
 
+  const [darkMode, setDarkMode] = useState<boolean>(false);
+
+  useEffect(() => {
+    document.body.className = darkMode ? "dark" : "light";
+  }, [darkMode]);
   return (
-    <CalcContext.Provider value={{ calc, setCalc }}>
+    <CalcContext.Provider value={{ calc, setCalc, darkMode, setDarkMode }}>
       {children}
     </CalcContext.Provider>
   );

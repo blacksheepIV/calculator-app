@@ -1,4 +1,4 @@
 export type ButtonType = {
-  className: string;
+  className?: string;
   value: string | number | React.ReactElement;
 };

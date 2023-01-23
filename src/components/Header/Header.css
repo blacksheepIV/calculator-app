@@ -17,3 +17,6 @@
   font-size: 14px;
   color: #5d6871;
 }
+.header__clock--dark {
+  color: #fff;
+}
