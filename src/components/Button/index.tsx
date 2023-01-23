@@ -3,7 +3,7 @@ import "./Button.css";
 import { ButtonType } from "./types";
 import { CalcContext } from "../../context/CalcContext";
 
-const Button: React.FC<ButtonType> = ({ className, value }) => {
+const Button: React.FC<ButtonType> = ({ className, value, disabled }) => {
   const { calc, setCalc } = useContext(CalcContext);
 
   /** @description a function to handle number press on calculato's keyboard */
@@ -84,6 +84,7 @@ const Button: React.FC<ButtonType> = ({ className, value }) => {
   }
 
   function handleClick(value: ButtonType["value"]) {
+    if (disabled) return;
     const results: Record<string, () => void> = {
       C: onClear,
       "(": () => {},

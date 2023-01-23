@@ -27,6 +27,7 @@ const AdvancedFeatures: React.FC<{}> = () => {
       />
       <Button
         key="dummy_btn"
+        disabled={true}
         className={classNames("button--dummy", { "button--dark": darkMode })}
         value={<TfiArrowsVertical size="1.3rem" />}
       />
