@@ -2,7 +2,7 @@ export type InitialStateType = {
   sign: string;
   num: string;
   res: string;
-  operation: string;
+  operation?: string;
 };
 export type CalcContextValueType = {
   calc: InitialStateType;

@@ -13,8 +13,8 @@ const CalcProvider: React.FC<CalcProviderProps> = ({ children }) => {
   const [calc, setCalc] = useState<InitialStateType>({
     sign: "",
     num: "0",
-    res: "0",
-    operation: ""
+    res: "0"
+    // operation: ""
   });
 
   const [darkMode, setDarkMode] = useState<boolean>(false);
