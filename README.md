@@ -1,5 +1,9 @@
 This project is a calculator inspired by [this design](https://dribbble.com/shots/9631225--Design-for-DailyUi-Day004-Calculator/attachments/1659581?mode=media) from [eilsgraff](https://dribbble.com/eilsgraff).
 
+## Screenshots
+![light theme](public/screenshots/Screenshot-light.png)
+![dark theme](public/screenshots/Screenshot-dark.png)
+
 ## TODOS
 
 - [x] Support dark mode
